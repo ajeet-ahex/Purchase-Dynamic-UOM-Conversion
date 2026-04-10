@@ -1,0 +1,262 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#000000;text-align: left;"><b>Purchase Dynamic UoM Conversion</b></h2>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            The Purchase Dynamic UoM Conversion module enhances Odoo’s purchasing process by enabling flexible unit-of-measure handling. It allows you to purchase goods in a completely different unit than you use for stocking, with automated quantity calculations and synchronized pricing.
+        </h3>
+        <br>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            This is highly useful when your suppliers use different units (like Kilograms) than your internal stock units (like Boxes or Units).
+        </h3>
+        <hr>
+        <hr>
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Key Features</b></h3>
+        <h3 class="oe_slogan"
+            style="text-align: left;font-size: 16px;margin: 0;margin-top: 20px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
+            <b>Define a Purchase UoM different from the base (stock) UoM</b>
+        </h3>
+        <h3 class="oe_slogan"
+            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
+            <b>Maintain a robust conversion ratio (e.g., 1 Unit = 2.5 KG)</b>
+        </h3>
+        <h3 class="oe_slogan"
+            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
+            <b>Automatically calculate purchase quantities</b>
+        </h3>
+        <h3 class="oe_slogan"
+            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
+            <b>See Price per Purchase Unit & Price per Base Unit simultaneously</b>
+        </h3>
+        <h3 class="oe_slogan"
+            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
+            <b>Show Vendor Product Codes directly in purchase reports</b>
+        </h3>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Setup Guide</b></h3>
+
+        <h4 style="margin-top: 20px; color: #008ba7;"><b>Step 1 - Install the Module</b></h4>
+        <ol style="font-size: 15px;">
+            <li>Copy the module folder to your Odoo custom addons directory.</li>
+            <li>In Odoo, go to <b>Settings</b> and activate <b>Developer Mode</b>.</li>
+            <li>Go to <b>Apps - Update Apps List</b> and click <b>Update</b>.</li>
+            <li>Search for <b>Purchase Dynamic UoM Conversion</b> and click <b>Install</b>.</li>
+        </ol>
+
+        <h4 style="margin-top: 20px; color: #008ba7;"><b>Requirements</b></h4>
+        <ul style="font-size: 16px; margin-top: 10px; list-style: none;">
+            <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Odoo Version:</b> Odoo 19 (Community or Enterprise)</li>
+            <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Dependencies:</b> Purchase and Product modules must be installed</li>
+        </ul>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Product Configuration</b></h3>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            Before using the feature, configure each product. Navigate to <b style="color:#008ba7;">Sales → Products → Products</b> and open the Conversion Details section of a Product:
+        </h3>
+        
+        <table class="table table-bordered" style="margin-top: 20px; font-size: 14px; background: white;">
+            <thead>
+                <tr style="background-color: #f8f9fa;">
+                    <th>Field</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>Base UoM</b></td>
+                    <td>Default stock unit (auto)</td>
+                    <td>Units</td>
+                </tr>
+                <tr>
+                    <td><b>Price per Base UoM</b></td>
+                    <td>Cost per base unit</td>
+                    <td>$12.50</td>
+                </tr>
+                <tr>
+                    <td><b>Purchase UoM</b></td>
+                    <td>Vendor's unit of measure</td>
+                    <td>kg</td>
+                </tr>
+                <tr>
+                    <td><b>Conversion Ratio</b></td>
+                    <td>Purchase UoM quantity per base unit</td>
+                    <td>2.5</td>
+                </tr>
+                <tr>
+                    <td><b>Price per Purchase Unit</b></td>
+                    <td>Vendor's price listed in their quote</td>
+                    <td>$5.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
+            <img class="oe_picture oe_screenshot" src="img_1.png">
+        </div>
+
+        <h4 style="margin-top: 30px; color: #008ba7;"><b>Field Behavior:</b></h4>
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-md-12">
+                <ul style="list-style: none;">
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Updating Price per Purchase Unit updates Base Price</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Updating Base Price recalculates Purchase Price</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Changing Conversion Ratio recalculates pricing</li>
+                </ul>
+            </div>
+        </div>
+
+        <h4 style="margin-top: 20px; color: #008ba7;"><b>Validation Rule:</b></h4>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            Conversion Ratio must be greater than 0
+        </h3>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Creating a Purchase Order</b></h3>
+        
+        <h4 style="margin-top: 20px; color: #008ba7;"><b>1. Add Product</b></h4>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            Navigate to <b>Purchase → Orders → Purchase Orders</b> and click Create. Select your Vendor and add the properly configured product.
+        </h3>
+        
+        <h4 style="margin-top: 30px; color: #008ba7;"><b>2. New Fields in Order Line</b></h4>
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-md-6">
+                <ul style="list-style: none;">
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Conversion Qty:</b> Quantity shown exactly in the Purchase UoM</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Purchase UoM:</b> The Vendor's specific unit (e.g., kg)</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Price per Conversion:</b> The exact price per Purchase UoM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
+            <img class="oe_picture oe_screenshot" src="img_2.png">
+        </div>
+
+        <h4 style="margin-top: 30px; color: #008ba7;"><b>3. Pricing Logic</b></h4>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            The system instantly calculates: <b>Unit Price = Price per Conversion × Conversion Ratio</b>. You can manually edit the Price per Conversion and the Unit Price updates automatically.
+        </h3>
+        
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Purchase Reports</b></h3>
+        
+        <h4 style="margin-top: 20px; color: #008ba7;"><b>Request for Quotation (RFQ)</b></h4>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            Includes:
+        </h3>
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-md-12">
+                <ul style="list-style: none;">
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Serial Number (S.No)</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Quantity in Purchase UoM</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Placeholder Price column</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
+            <img class="oe_picture oe_screenshot" src="img_3.png">
+        </div>
+
+        <h4 style="margin-top: 30px; color: #008ba7;"><b>Purchase Order Report</b></h4>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            Includes:
+        </h3>
+        <div class="row" style="margin-top: 15px;">
+            <div class="col-md-12">
+                <ul style="list-style: none;">
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Serial Number (S.No)</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Vendor Product Code</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Quantity (Purchase UoM)</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Price format: Price per Purchase Unit / UoM (e.g., 5.00 / kg)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+
+    <div class="oe_row oe_spaced">
+        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
+            <img class="oe_picture oe_screenshot" src="img_4.png">
+        </div>
+
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Frequently Asked Questions</b></h3>
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-12">
+                <p><b>Q: Conversion fields are not showing on my product?</b><br>
+                    A: Ensure Conversion Ratio is greater than 0, a Purchase UoM is set, and the Price per Purchase Unit is filled.</p>
+                <p><b>Q: My changes are not reflecting in an existing PO?</b><br>
+                    A: Existing line items store values as they were at creation time. Re-select the product or update the quantity to trigger the recalculation.</p>
+                <p><b>Q: Why is the Vendor Code missing in my report?</b><br>
+                    A: You must add the specific supplier in the Product's 'Supplier Info' tab and fill in their Vendor Product Code.</p>
+                <p><b>Q: Validation error says ratio must be > 0?</b><br>
+                    A: You must use strictly positive values. Use decimals like '0.001' if you are converting to larger units (like 1 Gram = 0.001 KG).</p>
+                <p><b>Q: Will this mess up my warehouse inventory quantities?</b><br>
+                    A: No. Inventory continues to use the Base UoM for all stock valuations and counts. This conversion logic only applies to the Purchasing environment.</p>
+
+            </div>
+        </div>
+        <hr>
+        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Support</b></h3>
+        <ul style="font-size: 15px; margin-top: 15px; list-style: none;">
+            <li><i class="fa fa-check" style="color: #008ba7;"></i> Ensure the Purchase module is installed and active in your Odoo instance.</li>
+            <li><i class="fa fa-check" style="color: #008ba7;"></i> Calculations execute in real-time natively using Odoo floating-point structures.</li>
+        </ul>
+        <br>
+        <h3 class="oe_slogan text-justify"
+            style="text-align: justify;font-size: 14px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
+            For purchase support, installation assistance, or customisation enquiries, please contact us through the channel where you purchased this module.
+        </h3>
+
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#2e2c2c;text-align: left;"><b>Connect With Us</b></h3>
+        <div class="text-center">
+            <a href="https://www.facebook.com/AhexTechnologies/" target="_blank"><i class="fa fa-3x fa-facebook-square"
+                    style="color:#4168a5;background:white;margin-left: 10px;margin-right: 6px;"></i></a>
+            <a href="https://www.instagram.com/ahextechnologies/" target="_blank"><i class="fa fa-3x fa-instagram"
+                    style="color:#b136a0;background:white;margin-left: 10px;margin-right: 6px;"></i></a>
+            <a href="https://www.linkedin.com/company/ahex-technologies/" target="_blank"><i
+                    class="fa fa-3x fa-linkedin"
+                    style="color:#0065a9;background:white;margin-left: 10px;margin-right: 6px;"></i></a>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container oe_separator">
+</section>

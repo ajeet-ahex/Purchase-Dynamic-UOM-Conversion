@@ -1,0 +1,49 @@
+<odoo>
+    <template id="report_purchasequotation_inherit" inherit_id="purchase.report_purchasequotation_document">
+
+        <!-- Add Headers -->
+        <xpath expr="//table/thead/tr/th[@name='th_description']" position="before">
+            <th><strong>S.No</strong></th>
+        </xpath>
+
+        <xpath expr="//table/thead/tr/th[@name='th_quantity']" position="after">
+            <!-- Show only if any line has purchase qty -->
+            <t t-if="any(l.conversion_qty for l in o.order_line)">
+                <th class="text-end"><strong>Qty</strong></th>
+            </t>
+            <th class="text-end"><strong>Price</strong></th>
+        </xpath>
+
+        <!-- Body Changes -->
+        <xpath expr="//table/tbody" position="before">
+            <t t-set="i" t-value="0"/>
+        </xpath>
+        <xpath expr="//table/tbody/t/tr/t[1]/td[1]" position="before">
+            <td>
+                <t t-if="not order_line.display_type">
+                    <t t-set="i" t-value="i + 1"/>
+                    <span t-esc="i"/>
+                </t>
+            </td>
+        </xpath>    
+
+        <!-- Add Purchase Qty + Unit + Price -->
+        <xpath expr="//td[@class='text-end']" position="after">
+            <t t-if="any(l.conversion_qty for l in o.order_line)">
+                
+                <!-- Purchase Qty -->
+                <td class="text-end">
+                    <t t-if="order_line.conversion_qty">
+                        <span t-esc="order_line.conversion_qty"/>
+                        <span t-field="order_line.purchase_uom_id"/>
+                    </t>
+                </td>
+            </t>
+            <!-- Empty Price -->
+            <td class="text-end">
+                <!-- intentionally blank -->
+            </td>
+        </xpath>
+
+    </template>
+</odoo>

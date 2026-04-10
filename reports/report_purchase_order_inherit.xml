@@ -1,0 +1,75 @@
+<odoo>
+    <template id="report_purchaseorder_inherit" inherit_id="purchase.report_purchaseorder_document">
+
+        <!-- Add S.No header -->
+        <xpath expr="//th[@name='th_description']" position="before">
+            <th><strong>S.No</strong></th>
+            <th><strong>Vendor Code</strong></th>
+        </xpath>
+        <xpath expr="//table/thead/tr/th[@name='th_quantity']" position="after">
+            <!-- Show only if any line has purchase qty -->
+            <t t-if="any(l.conversion_qty for l in o.order_line)">
+                <th class="text-end"><strong>Qty</strong></th>
+            </t>
+        </xpath>
+
+        <!-- Initialize counter -->
+        <xpath expr="//tbody" position="before">
+            <t t-set="i" t-value="0"/>
+        </xpath>
+
+        <!-- Add S.No column -->
+        <xpath expr="//tbody//tr/t[1]/td[1]" position="before">
+            <td>
+                <t t-if="not line.display_type">
+                    <t t-set="i" t-value="i + 1"/>
+                    <span t-esc="i"/>
+                </t>
+            </td>
+            <td class="text-start">
+                <t t-if="not line.display_type">
+                    <t t-set="seller"
+                       t-value="line.product_id.seller_ids.filtered(lambda s: s.partner_id == o.partner_id)[:1]"/>
+                    <span t-esc="seller.product_code or ''"/>
+                </t>
+            </td>
+        </xpath>
+
+
+        <!-- Fix Qty (same line: qty + unit) -->
+        <xpath expr="//td[@class='text-end'][1]" position="after">
+            <t t-if="any(l.conversion_qty for l in o.order_line)">
+                
+                <!-- Purchase Qty -->
+                <td class="text-end">
+                    <t t-if="line.conversion_qty">
+                        <span t-esc="line.conversion_qty"/>
+                        <span t-field="line.purchase_uom_id"/>
+                    </t>
+                </td>
+            </t>
+        </xpath>
+        <xpath expr="//td[span[@t-field='line.price_unit']]" position="replace">
+            <td class="text-end">
+                <t t-if="not line.display_type">
+
+                    <!-- If conversion pricing exists -->
+                    <t t-if="line.price_per_conversion and line.purchase_uom_id">
+                        <span t-esc="line.price_per_conversion"/>
+                        <span>/</span>
+                        <span t-field="line.purchase_uom_id"/>
+                    </t>
+
+                    <!-- Else normal price -->
+                    <t t-else="">
+                        <span t-field="line.price_unit"/>
+                        <span>/</span>
+                        <span t-field="line.product_uom_id"/>
+                    </t>
+
+                </t>
+            </td>
+        </xpath>
+
+    </template>
+</odoo>

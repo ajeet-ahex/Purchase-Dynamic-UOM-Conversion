@@ -1,0 +1,18 @@
+<!-- views/purchase_views.xml -->
+
+<odoo>
+    <record id="view_purchase_order_line_conversion" model="ir.ui.view">
+        <field name="name">purchase.order.line.conversion</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='order_line']/list/field[@name='product_uom_id']" position="after">
+                <field name="conversion_qty" readonly="1"/>
+                <field name="purchase_uom_id" readonly="1"/>
+                <field name="price_per_conversion"/>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

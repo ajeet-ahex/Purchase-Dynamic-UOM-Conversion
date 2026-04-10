@@ -1,0 +1,23 @@
+<!-- views/product_views.xml -->
+
+<odoo>
+    <record id="view_product_form_conversion" model="ir.ui.view">
+        <field name="name">product.template.conversion.form</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group[@name='group_standard_price']" position="after">
+                <group string="Conversion Details">
+                    <field name="uom_id" string="Base UoM"/>
+                    <field name="base_price"/>
+                    <field name="conversion_uom_id" string="Purchase UoM"/>
+                    <field name="conversion_ratio"/>
+                    <field name="price_per_conversion"/>
+                </group>
+
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
