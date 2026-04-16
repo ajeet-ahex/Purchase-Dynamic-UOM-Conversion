@@ -3,7 +3,7 @@
         <h2 class="oe_slogan" style="color:#000000;text-align: left;"><b>Purchase Dynamic UoM Conversion</b></h2>
         <h3 class="oe_slogan text-justify"
             style="text-align: justify;font-size: 16px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            The Purchase Dynamic UoM Conversion module enhances Odoo’s purchasing process by enabling flexible unit-of-measure handling. It allows you to purchase goods in a completely different unit than you use for stocking, with automated quantity calculations and synchronized pricing.
+            The Purchase Dynamic UoM Conversion module enhances Odoo&apos;s purchasing process by enabling flexible unit-of-measure handling. It allows you to purchase goods in a completely different unit than you use for stocking, with automated quantity calculations and synchronized pricing.
         </h3>
         <br>
         <h3 class="oe_slogan text-justify"
@@ -66,7 +66,7 @@
         <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Product Configuration</b></h3>
         <h3 class="oe_slogan text-justify"
             style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Before using the feature, configure each product. Navigate to <b style="color:#008ba7;">Sales → Products → Products</b> and open the Conversion Details section of a Product:
+            Before using the feature, configure each product. Navigate to <b style="color:#008ba7;">Sales &rarr; Products &rarr; Products</b> and open the Conversion Details section of a Product:
         </h3>
         
         <table class="table table-bordered" style="margin-top: 20px; font-size: 14px; background: white;">
@@ -90,7 +90,7 @@
                 </tr>
                 <tr>
                     <td><b>Purchase UoM</b></td>
-                    <td>Vendor's unit of measure</td>
+                    <td>Vendor&apos;s unit of measure</td>
                     <td>kg</td>
                 </tr>
                 <tr>
@@ -100,7 +100,7 @@
                 </tr>
                 <tr>
                     <td><b>Price per Purchase Unit</b></td>
-                    <td>Vendor's price listed in their quote</td>
+                    <td>Vendor&apos;s price listed in their quote</td>
                     <td>$5.00</td>
                 </tr>
             </tbody>
@@ -136,7 +136,7 @@
         <h4 style="margin-top: 20px; color: #008ba7;"><b>1. Add Product</b></h4>
         <h3 class="oe_slogan text-justify"
             style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Navigate to <b>Purchase → Orders → Purchase Orders</b> and click Create. Select your Vendor and add the properly configured product.
+            Navigate to <b>Purchase &rarr; Orders &rarr; Purchase Orders</b> and click Create. Select your Vendor and add the properly configured product.
         </h3>
         
         <h4 style="margin-top: 30px; color: #008ba7;"><b>2. New Fields in Order Line</b></h4>
@@ -144,7 +144,7 @@
             <div class="col-md-6">
                 <ul style="list-style: none;">
                     <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Conversion Qty:</b> Quantity shown exactly in the Purchase UoM</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Purchase UoM:</b> The Vendor's specific unit (e.g., kg)</li>
+                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Purchase UoM:</b> The Vendor&apos;s specific unit (e.g., kg)</li>
                     <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Price per Conversion:</b> The exact price per Purchase UoM</li>
                 </ul>
             </div>
@@ -157,7 +157,7 @@
         <h4 style="margin-top: 30px; color: #008ba7;"><b>3. Pricing Logic</b></h4>
         <h3 class="oe_slogan text-justify"
             style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            The system instantly calculates: <b>Unit Price = Price per Conversion × Conversion Ratio</b>. You can manually edit the Price per Conversion and the Unit Price updates automatically.
+            The system instantly calculates: <b>Unit Price = Price per Conversion &times; Conversion Ratio</b>. You can manually edit the Price per Conversion and the Unit Price updates automatically.
         </h3>
         
     </div>
@@ -220,9 +220,9 @@
                 <p><b>Q: My changes are not reflecting in an existing PO?</b><br>
                     A: Existing line items store values as they were at creation time. Re-select the product or update the quantity to trigger the recalculation.</p>
                 <p><b>Q: Why is the Vendor Code missing in my report?</b><br>
-                    A: You must add the specific supplier in the Product's 'Supplier Info' tab and fill in their Vendor Product Code.</p>
-                <p><b>Q: Validation error says ratio must be > 0?</b><br>
-                    A: You must use strictly positive values. Use decimals like '0.001' if you are converting to larger units (like 1 Gram = 0.001 KG).</p>
+                    A: You must add the specific supplier in the Product&apos;s &apos;Supplier Info&apos; tab and fill in their Vendor Product Code.</p>
+                <p><b>Q: Validation error says ratio must be &gt; 0?</b><br>
+                    A: You must use strictly positive values. Use decimals like &apos;0.001&apos; if you are converting to larger units (like 1 Gram = 0.001 KG).</p>
                 <p><b>Q: Will this mess up my warehouse inventory quantities?</b><br>
                     A: No. Inventory continues to use the Base UoM for all stock valuations and counts. This conversion logic only applies to the Purchasing environment.</p>
 
