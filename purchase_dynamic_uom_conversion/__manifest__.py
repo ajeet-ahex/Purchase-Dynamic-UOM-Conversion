@@ -11,6 +11,7 @@
     'description': """
         Purchase Dynamic UoM Conversion allows you to define a Purchase UoM different from the base Stock UoM with automated conversion ratios and pricing.
     """,
+    "live_test_url": "https://ahex.co/contact/",
     'depends': ['purchase', 'product'],
     'data': [
         'reports/report_purchase_order_inherit.xml',
