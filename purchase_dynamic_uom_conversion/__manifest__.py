@@ -18,6 +18,7 @@
         'views/product_views.xml',
         'views/purchase_views.xml',
     ],
+    'images': ['static/description/banner.png'],
     'license': 'OPL-1',
     'application': False,
     'installable': True,
