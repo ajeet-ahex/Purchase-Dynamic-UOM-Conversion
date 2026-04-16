@@ -19,6 +19,8 @@
         'views/purchase_views.xml',
     ],
     'images': ['static/description/banner.png'],
+    'price' : '22',
+    'currency' : 'USD',
     'license': 'OPL-1',
     'application': False,
     'installable': True,
