@@ -19,7 +19,7 @@
         'views/product_views.xml',
         'views/purchase_views.xml',
     ],
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.gif'],
     'price' : '22',
     'currency' : 'USD',
     'license': 'OPL-1',
