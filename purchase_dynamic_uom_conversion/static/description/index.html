@@ -27,7 +27,7 @@
                     style="width: 100%; margin: 0 auto; max-width: 900px; border: none; border-collapse: separate; border-spacing: 14px 0;">
                     <tr>
                         <td
-                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            style="width: 25%; background-color: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
                             <div
                                 style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
                                 Dual-UoM</div>
@@ -35,7 +35,7 @@
                                 and stock units, side by side</div>
                         </td>
                         <td
-                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            style="width: 25%; background-color: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
                             <div
                                 style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
                                 1x</div>
@@ -43,7 +43,7 @@
                                 Conversion ratio set once per product</div>
                         </td>
                         <td
-                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            style="width: 25%; background-color: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
                             <div
                                 style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
                                 Live</div>
@@ -51,7 +51,7 @@
                                 recalculate in real time</div>
                         </td>
                         <td
-                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            style="width: 25%; background-color: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
                             <div
                                 style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
                                 Zero</div>
@@ -73,9 +73,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-exclamation-triangle"></i></span>
-                <span>The Problem Odoo Doesn't Solve Out of the Box</span>
+                <span style="vertical-align: middle;">The Problem Odoo Doesn't Solve Out of the Box</span>
             </h2>
             <p
                 style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 14px; text-align: left !important;">
@@ -97,18 +97,20 @@
                 vendor-facing quantity display, and automatic two-way price synchronisation. That's the gap this module
                 fills.</p>
 
-            <div
-                style="background-color: #E1F5F4; border-left: 4px solid #017E84; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 14.5px !important; color: #2E2732 !important;">
-                <strong style="color: #017E84 !important;">The Vendor Unit of Measure Converter for Purchase module
-                    closes
-                    that gap.</strong> As a lightweight third-party UoM conversion app, it adds a dedicated Purchase UoM
-                field per product, a configurable conversion ratio, automatic bidirectional pricing, and supplier-ready
-                reports &mdash; entirely within Odoo's purchasing layer, with nothing touching your stock records.
+            <div style="background-color: #017E84; border-radius: 8px; padding-left: 4px; margin: 18px 0;">
+                <div
+                    style="background-color: #E1F5F4; border-radius: 0 8px 8px 0; padding: 18px 22px; font-size: 14.5px !important; color: #2E2732 !important;">
+                    <strong style="color: #017E84 !important;">The Vendor Unit of Measure Converter for Purchase module
+                        closes
+                        that gap.</strong> As a lightweight third-party UoM conversion app, it adds a dedicated Purchase UoM
+                    field per product, a configurable conversion ratio, automatic bidirectional pricing, and supplier-ready
+                    reports &mdash; entirely within Odoo's purchasing layer, with nothing touching your stock records.
+                </div>
             </div>
 
-            <div style="display: flex; gap: 16px; margin: 18px 0; flex-wrap: wrap;">
+            <div style="display: flex; justify-content: space-between; margin: 18px 0; flex-wrap: wrap;">
                 <div
-                    style="flex: 1; min-width: 300px; background-color: #FBEAEE; border: 1px solid #F3CBD4; border-radius: 12px; padding: 18px 20px;">
+                    style="flex: 0 0 48.5%; max-width: 48.5%; min-width: 300px; background-color: #FBEAEE; border: 1px solid #F3CBD4; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
                     <div
                         style="display: flex; align-items: center; font-weight: 700 !important; font-size: 14.5px !important; color: #C63A56 !important; margin-bottom: 8px;">
                         &#10005; Without this module</div>
@@ -119,7 +121,7 @@
                         units, and lose visibility on true per-unit landed cost.</p>
                 </div>
                 <div
-                    style="flex: 1; min-width: 300px; background-color: #E6F5EE; border: 1px solid #C9EADB; border-radius: 12px; padding: 18px 20px;">
+                    style="flex: 0 0 48.5%; max-width: 48.5%; min-width: 300px; background-color: #E6F5EE; border: 1px solid #C9EADB; border-radius: 12px; padding: 18px 20px; margin-bottom: 16px;">
                     <div
                         style="display: flex; align-items: center; font-weight: 700 !important; font-size: 14.5px !important; color: #0E8F6B !important; margin-bottom: 8px;">
                         &#10003; With this module</div>
@@ -131,15 +133,17 @@
                 </div>
             </div>
 
-            <div
-                style="background-color: #F8F4F7; border-left: 4px solid #714B67; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 14.5px !important; color: #2E2732 !important; font-style: italic !important;">
-                <strong style="font-style: normal !important; color: #714B67 !important;">Quick summary:</strong> If
-                you've
-                ever asked "what's the cost per box when my supplier prices by kg?" or "why doesn't the stock quantity
-                match
-                what I ordered?" or "can Odoo show both the vendor's unit and my stock unit on the same PO line?"
-                &mdash; this
-                module is exactly what you need.
+            <div style="background-color: #714B67; border-radius: 8px; padding-left: 4px; margin: 18px 0;">
+                <div
+                    style="background-color: #F8F4F7; border-radius: 0 8px 8px 0; padding: 18px 22px; font-size: 14.5px !important; color: #2E2732 !important; font-style: italic !important;">
+                    <strong style="font-style: normal !important; color: #714B67 !important;">Quick summary:</strong> If
+                    you've
+                    ever asked "what's the cost per box when my supplier prices by kg?" or "why doesn't the stock quantity
+                    match
+                    what I ordered?" or "can Odoo show both the vendor's unit and my stock unit on the same PO line?"
+                    &mdash; this
+                    module is exactly what you need.
+                </div>
             </div>
         </div>
     </div>
@@ -153,9 +157,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-star"></i></span>
-                <span>Key Features</span>
+                <span style="vertical-align: middle;">Key Features</span>
             </h2>
             <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -7px; margin-left: -7px;">
                 <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
@@ -267,7 +271,7 @@
                             <p
                                 style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
                                 A dedicated <span
-                                    style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 4px; border-radius: 4px;">Conversion
+                                    style="font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 2px 4px; border-radius: 4px;">Conversion
                                     Details</span> section is added to each product form. Set Purchase UoM, enter ratio,
                                 done.</p>
                         </div>
@@ -286,9 +290,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-bar-chart"></i></span>
-                <span>How a Converted Purchase Order Line Looks</span>
+                <span style="vertical-align: middle;">How a Converted Purchase Order Line Looks</span>
             </h2>
             <p
                 style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 16px; text-align: left !important;">
@@ -303,16 +307,16 @@
                 <thead>
                     <tr>
                         <th
-                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; border-radius: 8px 0 0 0;">
+                            style="background-color: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; border-radius: 8px 0 0 0;">
                             Field</th>
                         <th
-                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;">
+                            style="background-color: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;">
                             What it is</th>
                         <th
-                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;">
+                            style="background-color: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;">
                             Value</th>
                         <th
-                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; border-radius: 0 8px 0 0;">
+                            style="background-color: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; border-radius: 0 8px 0 0;">
                             Source</th>
                     </tr>
                 </thead>
@@ -327,7 +331,7 @@
                             style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
                             Units (bags)</td>
                         <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
-                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Set
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background-color: #F1E9EF; color: #714B67;">Set
                                 on product</span></td>
                     </tr>
                     <tr>
@@ -341,7 +345,7 @@
                             style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
                             Kilograms (kg)</td>
                         <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
-                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Set
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background-color: #F1E9EF; color: #714B67;">Set
                                 on product</span></td>
                     </tr>
                     <tr>
@@ -355,7 +359,7 @@
                             style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
                             2.5 (1 bag = 2.5 kg)</td>
                         <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
-                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Set
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background-color: #F1E9EF; color: #714B67;">Set
                                 on product</span></td>
                     </tr>
                     <tr>
@@ -369,7 +373,7 @@
                             style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
                             100 kg</td>
                         <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
-                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Entered
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background-color: #F1E9EF; color: #714B67;">Entered
                                 on PO</span></td>
                     </tr>
                     <tr>
@@ -383,7 +387,7 @@
                             style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #0E8F6B; font-weight: 700;">
                             $12.50 / bag</td>
                         <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
-                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6F5EE; color: #0E8F6B;">Auto-calculated</span>
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background-color: #E6F5EE; color: #0E8F6B;">Auto-calculated</span>
                         </td>
                     </tr>
                     <tr>
@@ -394,7 +398,7 @@
                         <td style="padding: 13px 16px; border-bottom: none; color: #0E8F6B; font-weight: 700;">$500.00
                         </td>
                         <td style="padding: 13px 16px; border-bottom: none;"><span
-                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6F5EE; color: #0E8F6B;">Auto-calculated</span>
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background-color: #E6F5EE; color: #0E8F6B;">Auto-calculated</span>
                         </td>
                     </tr>
                 </tbody>
@@ -421,7 +425,7 @@
                 Transparent
                 &amp; Auditable</p>
             <div
-                style="background: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center; margin: 14px 0; font-weight: 700; font-size: 15px; color: #714B67; font-family: 'Courier New', monospace;">
+                style="background-color: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center; margin: 14px 0; font-weight: 700; font-size: 15px; color: #714B67; font-family: 'Courier New', monospace;">
                 Unit Price (Base) = Price per Purchase Unit &times; Conversion Ratio
             </div>
             <p
@@ -448,14 +452,14 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin: 0; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #241A28 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #241A28 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-headphones"></i></span>
-                <span>Need Any Help?</span>
+                <span style="vertical-align: middle;">Need Any Help?</span>
             </h2>
             <div style="flex: 0 0 50%; max-width: 50%;">
-                <div style="background: #241A28; border-radius: 12px; padding: 16px 18px; color: #fff;">
+                <div style="background-color: #241A28; border-radius: 12px; padding: 16px 18px; color: #fff;">
                     <div
-                        style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; margin-bottom: 12px;">
+                        style="display: flex; align-items: center; font-weight: 700; font-size: 14px; margin-bottom: 12px;">
                         Support | Contact
                     </div>
                     <div
@@ -478,9 +482,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-wrench"></i></span>
-                <span>Product Configuration &mdash; Step by Step</span>
+                <span style="vertical-align: middle;">Product Configuration &mdash; Step by Step</span>
             </h2>
             <p
                 style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 22px; text-align: left !important;">
@@ -488,16 +492,16 @@
                 automatically. No further action needed for your procurement team.
             </p>
 
-            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+            <div style="display: flex; margin-bottom: 22px;">
                 <div
-                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    style="width: 32px; height: 32px; border-radius: 50%; background-color: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 16px;">
                     1</div>
                 <div>
                     <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Open the product
                         form
                     </h4>
                     <p style="font-size: 13.8px; color: #111827; margin: 0;">Navigate to <span
-                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Purchase
+                            style="font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Purchase
                             &rarr; Products &rarr; Products</span> and open the product you want to configure for
                         dual-unit
                         purchasing. Any product that is purchased from a supplier with different units is a candidate.
@@ -505,25 +509,25 @@
                 </div>
             </div>
 
-            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+            <div style="display: flex; margin-bottom: 22px;">
                 <div
-                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    style="width: 32px; height: 32px; border-radius: 50%; background-color: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 16px;">
                     2</div>
                 <div>
                     <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Locate the
                         Conversion
                         Details section</h4>
                     <p style="font-size: 13.8px; color: #111827; margin: 0;">This module adds a dedicated <span
-                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Conversion
+                            style="font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Conversion
                             Details</span> section to the product form. All conversion-specific fields live here &mdash;
                         separate
                         from the standard product tabs so they don't interfere with existing workflows.</p>
                 </div>
             </div>
 
-            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+            <div style="display: flex; margin-bottom: 22px;">
                 <div
-                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    style="width: 32px; height: 32px; border-radius: 50%; background-color: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 16px;">
                     3</div>
                 <div>
                     <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Set your Purchase
@@ -534,14 +538,14 @@
                         kg, litre, carton, pallet). This must be a valid Odoo unit &mdash; if it doesn't exist yet,
                         create it
                         under <span
-                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Configuration
+                            style="font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Configuration
                             &rarr; Units of Measure</span> first.</p>
                 </div>
             </div>
 
-            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+            <div style="display: flex; margin-bottom: 22px;">
                 <div
-                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    style="width: 32px; height: 32px; border-radius: 50%; background-color: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 16px;">
                     4</div>
                 <div>
                     <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Enter the
@@ -552,7 +556,7 @@
                         you
                         purchase in a unit larger than your stock unit.</p>
                     <div
-                        style="background: #FBF0D9; border-radius: 8px; padding: 14px 18px; font-size: 13.5px; color: #8A6116;">
+                        style="background-color: #FBF0D9; border-radius: 8px; padding: 14px 18px; font-size: 13.5px; color: #8A6116;">
                         <i class="fa fa-lightbulb-o"></i> Example: if 1 bag (base) = 2.5 kg (purchase), enter 2.5. If 1
                         gram (base) = 0.001 kg (purchase),
                         enter 0.001.
@@ -560,9 +564,9 @@
                 </div>
             </div>
 
-            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+            <div style="display: flex; margin-bottom: 22px;">
                 <div
-                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    style="width: 32px; height: 32px; border-radius: 50%; background-color: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 16px;">
                     5</div>
                 <div>
                     <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Set either price
@@ -576,16 +580,16 @@
                         sync from this point forward.</p>
                 </div>
             </div>
-            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+            <div style="display: flex; margin-bottom: 22px;">
                 <div
-                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    style="width: 32px; height: 32px; border-radius: 50%; background-color: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; margin-right: 16px;">
                     6</div>
                 <div>
                     <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Add the supplier
                         and
                         vendor product code</h4>
                     <p style="font-size: 13.8px; color: #111827; margin: 0;">In the <span
-                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Supplier
+                            style="font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Supplier
                             Info</span> tab, add the supplier and fill in their Vendor Product Code. This code appears
                         on
                         RFQ and PO PDF reports in the supplier-facing columns &mdash; formatted exactly as vendors
@@ -612,9 +616,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-file-text-o"></i></span>
-                <span>What Your Purchase Reports Include</span>
+                <span style="vertical-align: middle;">What Your Purchase Reports Include</span>
             </h2>
             <p
                 style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 16px; text-align: left !important;">
@@ -631,44 +635,44 @@
                 <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 12px; box-sizing: border-box;">
                     <h4
                         style="font-size: 14.5px; font-weight: 700; color: #2A2130; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid #F1E9EF; display: flex; align-items: center; gap: 8px;">
-                        <i class="fa fa-file-o"></i> Request for Quotation (RFQ)
+                        <i class="fa fa-file-text" style="margin-right: 8px;"></i> Request for Quotation (RFQ)
                     </h4>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #714B67;"></span>S.No
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #714B67; margin-right: 8px;"></span>S.No
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Serial number per line item
                         </p>
                     </div>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #0E8F6B;"></span>Product
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #0E8F6B; margin-right: 8px;"></span>Product
                             Description
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Product name in standard
                             format
                         </p>
                     </div>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #017E84;"></span>Quantity
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #017E84; margin-right: 8px;"></span>Quantity
                             in Purchase UoM
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Shown in the supplier's unit
                             (kg,
                             litre etc.)</p>
                     </div>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #8C6183;"></span>Price
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #8C6183; margin-right: 8px;"></span>Price
                             Placeholder Column
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Empty column for vendor to
@@ -684,42 +688,42 @@
                 <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 12px; box-sizing: border-box;">
                     <h4
                         style="font-size: 14.5px; font-weight: 700; color: #2A2130; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid #AFE9E5; display: flex; align-items: center; gap: 8px;">
-                        <i class="fa fa-archive"></i> Purchase Order Report
+                        <i class="fa fa-file-text" style="margin-right: 8px;"></i> Purchase Order Report
                     </h4>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #714B67;"></span>S.No
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #714B67; margin-right: 8px;"></span>S.No
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Serial number per line item
                         </p>
                     </div>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #C9962F;"></span>Vendor
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #C9962F; margin-right: 8px;"></span>Vendor
                             Product Code
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Supplier's own SKU / catalogue
                             reference</p>
                     </div>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #017E84;"></span>Quantity
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #017E84; margin-right: 8px;"></span>Quantity
                             in Purchase UoM
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Order qty in supplier's unit
                         </p>
                     </div>
-                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                    <div style="background-color: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
                         <div
-                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            style="display: flex; align-items: center; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
                             <span
-                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #0E8F6B;"></span>Price
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background-color: #0E8F6B; margin-right: 8px;"></span>Price
                             per Purchase Unit / UoM
                         </div>
                         <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">E.g., $5.00 / kg &mdash;
@@ -744,51 +748,61 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-bullseye"></i></span>
-                <span>Ideal For</span>
+                <span style="vertical-align: middle;">Ideal For</span>
             </h2>
-            <div
-                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
-                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-industry"></i></span>
-                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Manufacturing
-                        businesses</strong> purchasing raw materials by weight or volume but managing finished goods or
-                    sub-assemblies by unit count &mdash; with Bill of Materials that need both.</p>
+            <div style="background-color: #017E84; border-radius: 8px; padding-left: 3px; margin-bottom: 10px;">
+                <div
+                    style="display: flex; align-items: flex-start; background-color: #F5F1F3; border-radius: 0 8px 8px 0; padding: 15px 18px;">
+                    <span style="font-size: 18px; color: #017E84; margin-right: 14px;"><i class="fa fa-industry"></i></span>
+                    <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Manufacturing
+                            businesses</strong> purchasing raw materials by weight or volume but managing finished goods or
+                        sub-assemblies by unit count &mdash; with Bill of Materials that need both.</p>
+                </div>
             </div>
-            <div
-                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
-                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-truck"></i></span>
-                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Distributors
-                        and
-                        wholesalers</strong> whose supplier catalogues use different units than their warehouse
-                    management
-                    or fulfillment system.</p>
+            <div style="background-color: #017E84; border-radius: 8px; padding-left: 3px; margin-bottom: 10px;">
+                <div
+                    style="display: flex; align-items: flex-start; background-color: #F5F1F3; border-radius: 0 8px 8px 0; padding: 15px 18px;">
+                    <span style="font-size: 18px; color: #017E84; margin-right: 14px;"><i class="fa fa-truck"></i></span>
+                    <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Distributors
+                            and
+                            wholesalers</strong> whose supplier catalogues use different units than their warehouse
+                        management
+                        or fulfillment system.</p>
+                </div>
             </div>
-            <div
-                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
-                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-archive"></i></span>
-                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Food and
-                        beverage
-                        companies</strong> handling bulk commodity purchases (kg, litres, tonnes) with unit-based
-                    internal
-                    stocking and recipe management.</p>
+            <div style="background-color: #017E84; border-radius: 8px; padding-left: 3px; margin-bottom: 10px;">
+                <div
+                    style="display: flex; align-items: flex-start; background-color: #F5F1F3; border-radius: 0 8px 8px 0; padding: 15px 18px;">
+                    <span style="font-size: 18px; color: #017E84; margin-right: 14px;"><i class="fa fa-archive"></i></span>
+                    <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Food and
+                            beverage
+                            companies</strong> handling bulk commodity purchases (kg, litres, tonnes) with unit-based
+                        internal
+                        stocking and recipe management.</p>
+                </div>
             </div>
-            <div
-                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
-                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-plane"></i></span>
-                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Import / export
-                        businesses</strong> reconciling supplier invoices denominated in international units against
-                    local
-                    warehouse stock unit records.</p>
+            <div style="background-color: #017E84; border-radius: 8px; padding-left: 3px; margin-bottom: 10px;">
+                <div
+                    style="display: flex; align-items: flex-start; background-color: #F5F1F3; border-radius: 0 8px 8px 0; padding: 15px 18px;">
+                    <span style="font-size: 18px; color: #017E84; margin-right: 14px;"><i class="fa fa-plane"></i></span>
+                    <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Import / export
+                            businesses</strong> reconciling supplier invoices denominated in international units against
+                        local
+                        warehouse stock unit records.</p>
+                </div>
             </div>
-            <div
-                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
-                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-handshake-o"></i></span>
-                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Odoo
-                        implementation
-                        partners</strong> setting up purchase order unit conversion and a per-product conversion ratio
-                    for
-                    clients with multi-UoM supply chains &mdash; one module solves the whole class of problem.</p>
+            <div style="background-color: #017E84; border-radius: 8px; padding-left: 3px; margin-bottom: 10px;">
+                <div
+                    style="display: flex; align-items: flex-start; background-color: #F5F1F3; border-radius: 0 8px 8px 0; padding: 15px 18px;">
+                    <span style="font-size: 18px; color: #017E84; margin-right: 14px;"><i class="fa fa-handshake-o"></i></span>
+                    <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Odoo
+                            implementation
+                            partners</strong> setting up purchase order unit conversion and a per-product conversion ratio
+                        for
+                        clients with multi-UoM supply chains &mdash; one module solves the whole class of problem.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -802,13 +816,13 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-cogs"></i></span>
-                <span>Technical Specifications</span>
+                <span style="vertical-align: middle;">Technical Specifications</span>
             </h2>
             <div class="row" style="display: flex; margin-bottom: 14px; margin-left: -7px; margin-right: -7px;">
                 <div class="col-md-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 7px;">
-                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                    <div style="background-color: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
                         <div
                             style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
                             Odoo Version</div>
@@ -816,7 +830,7 @@
                     </div>
                 </div>
                 <div class="col-md-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 7px;">
-                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                    <div style="background-color: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
                         <div
                             style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
                             Lines of Code</div>
@@ -824,7 +838,7 @@
                     </div>
                 </div>
                 <div class="col-md-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 7px;">
-                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                    <div style="background-color: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
                         <div
                             style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
                             License</div>
@@ -834,34 +848,34 @@
             </div>
             <div class="row" style="display: flex; margin-bottom: 14px; margin-left: -7px; margin-right: -7px;">
                 <div class="col-md-12" style="flex: 0 0 100%; max-width: 100%; padding: 7px;">
-                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                    <div style="background-color: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
                         <div
                             style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
                             Technical Name</div>
                         <div
-                            style="font-size: 13px; font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 4px 8px; border-radius: 6px; display: inline-block; font-weight: 800;">
+                            style="font-size: 13px; font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 4px 8px; border-radius: 6px; display: inline-block; font-weight: 800;">
                             purchase_dynamic_uom_conversion</div>
                     </div>
                 </div>
             </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0;">
+            <div style="display: flex; flex-wrap: wrap; margin: 16px 0;">
                 <span
-                    style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background: #E6F5EE; color: #0E8F6B;">&#10003;
+                    style="display: flex; align-items: center; padding: 8px 14px; margin-right: 10px; margin-bottom: 10px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background-color: #E6F5EE; color: #0E8F6B;">&#10003;
                     Odoo.sh</span>
                 <span
-                    style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background: #E6F5EE; color: #0E8F6B;">&#10003;
+                    style="display: flex; align-items: center; padding: 8px 14px; margin-right: 10px; margin-bottom: 10px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background-color: #E6F5EE; color: #0E8F6B;">&#10003;
                     On-Premise</span>
                 <span
-                    style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background: #E6F5EE; color: #0E8F6B;">&#10003;
+                    style="display: flex; align-items: center; padding: 8px 14px; margin-right: 10px; margin-bottom: 10px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background-color: #E6F5EE; color: #0E8F6B;">&#10003;
                     Enterprise Edition</span>
             </div>
             <div
-                style="border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; font-size: 13.8px; background: #E1F5F4; border: 1px solid #AFE9E5;">
+                style="border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; font-size: 13.8px; background-color: #E1F5F4; border: 1px solid #AFE9E5;">
                 <div style="font-weight: 700; margin-bottom: 4px; color: #017E84;">Module Dependencies</div>
                 <p style="color: #2E2732; margin: 0;">&bull; Purchase (purchase) &nbsp; &bull; Product (product)</p>
             </div>
             <div
-                style="border-radius: 12px; padding: 16px 20px; font-size: 13.8px; background: #F8F4F7; border: 1px solid #F1E9EF;">
+                style="border-radius: 12px; padding: 16px 20px; font-size: 13.8px; background-color: #F8F4F7; border: 1px solid #F1E9EF;">
                 <div style="font-weight: 700; margin-bottom: 4px; color: #714B67;">External Dependencies</div>
                 <p style="color: #2E2732; margin: 0;">None &mdash; pure Odoo, no third-party libraries</p>
             </div>
@@ -877,9 +891,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-rocket"></i></span>
-                <span>Quick Setup Guide</span>
+                <span style="vertical-align: middle;">Quick Setup Guide</span>
             </h2>
             <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -17px; margin-left: -17px;">
                 <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 17px; box-sizing: border-box;">
@@ -906,7 +920,7 @@
                         Purchasing</p>
                     <ol style="padding-left: 18px; color: #111827; font-size: 13.8px; margin-top: 8px;">
                         <li style="margin-bottom: 8px;">Open a product &rarr; find <span
-                                style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Conversion
+                                style="font-family: 'Courier New', monospace; background-color: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Conversion
                                 Details</span></li>
                         <li style="margin-bottom: 8px;">Set <strong>Purchase UoM</strong> and <strong>Conversion
                                 Ratio</strong></li>
@@ -926,9 +940,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-question-circle"></i></span>
-                <span>Frequently Asked Questions</span>
+                <span style="vertical-align: middle;">Frequently Asked Questions</span>
             </h2>
             <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
                 <h4
@@ -1066,9 +1080,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-life-ring"></i></span>
-                <span>Support &amp; Documentation</span>
+                <span style="vertical-align: middle;">Support &amp; Documentation</span>
             </h2>
             <p
                 style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 14px; text-align: left !important;">
@@ -1079,7 +1093,7 @@
             </p>
             <div class="row" style="display: flex; margin-bottom: 14px; margin-left: -7px; margin-right: -7px;">
                 <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
-                    <div style="background: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center;">
+                    <div style="background-color: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center;">
                         <div style="font-size: 22px; margin-bottom: 8px;"><i class="fa fa-archive"></i></div>
                         <h4 style="font-size: 14px; color: #2A2130; margin: 0 0 4px 0; font-weight: 700;">Purchase
                             Support
@@ -1090,7 +1104,7 @@
                     </div>
                 </div>
                 <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
-                    <div style="background: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center;">
+                    <div style="background-color: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center;">
                         <div style="font-size: 22px; margin-bottom: 8px;"><i class="fa fa-envelope"></i></div>
                         <h4 style="font-size: 14px; color: #2A2130; margin: 0 0 4px 0; font-weight: 700;">Contact Ahex
                         </h4>
@@ -1111,9 +1125,9 @@
             <h2 class="oe_slogan"
                 style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
                 <span
-                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important; vertical-align: middle;"><i
                         class="fa fa-link"></i></span>
-                <span>Other Modules by Ahex Technologies</span>
+                <span style="vertical-align: middle;">Other Modules by Ahex Technologies</span>
             </h2>
             <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -10px; margin-left: -10px">
                 <div class="col-md-4"
