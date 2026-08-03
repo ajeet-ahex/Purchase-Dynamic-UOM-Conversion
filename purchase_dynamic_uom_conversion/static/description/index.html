@@ -1,262 +1,1193 @@
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h2 class="oe_slogan" style="color:#000000;text-align: left;"><b>Purchase Dynamic UoM Conversion</b></h2>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            The Purchase Dynamic UoM Conversion module enhances Odoo&apos;s purchasing process by enabling flexible unit-of-measure handling. It allows you to purchase goods in a completely different unit than you use for stocking, with automated quantity calculations and synchronized pricing.
-        </h3>
-        <br>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            This is highly useful when your suppliers use different units (like Kilograms) than your internal stock units (like Boxes or Units).
-        </h3>
-        <hr>
-        <hr>
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Key Features</b></h3>
-        <h3 class="oe_slogan"
-            style="text-align: left;font-size: 16px;margin: 0;margin-top: 20px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
-            <b>Define a Purchase UoM different from the base (stock) UoM</b>
-        </h3>
-        <h3 class="oe_slogan"
-            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
-            <b>Maintain a robust conversion ratio (e.g., 1 Unit = 2.5 KG)</b>
-        </h3>
-        <h3 class="oe_slogan"
-            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
-            <b>Automatically calculate purchase quantities</b>
-        </h3>
-        <h3 class="oe_slogan"
-            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
-            <b>See Price per Purchase Unit & Price per Base Unit simultaneously</b>
-        </h3>
-        <h3 class="oe_slogan"
-            style="text-align: left;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            <i class="fa fa-star fa-spin" aria-hidden="true" style="color: #008ba7;font-size: 15px;"></i>
-            <b>Show Vendor Product Codes directly in purchase reports</b>
-        </h3>
-    </div>
-</section>
+<!-- SECTION 1: HERO BANNER -->
+<section class="oe_container" style="margin-bottom: 24px; padding: 0; font-family: sans-serif;">
+    <div
+        style="background-color: #241A28; background-image: linear-gradient(135deg, #241A28 0%, #714B67 45%, #017E84 130%); padding: 56px 24px 44px; color: #ffffff !important; text-align: center !important">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <div class="oe_span12">
+                <h2 class="oe_slogan"
+                    style="color: #ffffff !important; font-weight: 800 !important; font-size: 40px !important; margin: 0 0 18px; line-height: 1.2 !important; letter-spacing: -0.5px !important">
+                    Vendor Unit of Measure<br />Converter for Purchase</h2>
+                <p
+                    style="color: #ffffff !important; font-size: 15.5px !important; margin: 0 auto 28px; max-width: 720px; line-height: 1.6 !important">
+                    <strong>Vendor Unit of Measure Converter for Purchase</strong> delivers full dual-UoM purchasing
+                    that goes far beyond Odoo's standard purchase flow &mdash; a single conversion layer that
+                    automatically
+                    calculates quantities and pricing across every purchase unit, from order creation through to
+                    reports. Zero manual maths. Zero spreadsheets. Zero errors.
+                </p>
+                <div
+                    style="background-color: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 20px 28px; font-style: italic !important; font-size: 14.5px !important; color: #ffffff !important; text-align: center !important; margin: 0 auto 28px; max-width: 860px;">
+                    "Think of it like a live currency converter for your units of measure &mdash; every purchase order
+                    line
+                    shows both the supplier's unit and your stock unit side by side, with all prices recalculating in
+                    real time."
+                </div>
 
-<section class="oe_container oe_dark">
-    <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Setup Guide</b></h3>
-
-        <h4 style="margin-top: 20px; color: #008ba7;"><b>Step 1 - Install the Module</b></h4>
-        <ol style="font-size: 15px;">
-            <li>Copy the module folder to your Odoo custom addons directory.</li>
-            <li>In Odoo, go to <b>Settings</b> and activate <b>Developer Mode</b>.</li>
-            <li>Go to <b>Apps - Update Apps List</b> and click <b>Update</b>.</li>
-            <li>Search for <b>Purchase Dynamic UoM Conversion</b> and click <b>Install</b>.</li>
-        </ol>
-
-        <h4 style="margin-top: 20px; color: #008ba7;"><b>Requirements</b></h4>
-        <ul style="font-size: 16px; margin-top: 10px; list-style: none;">
-            <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Odoo Version:</b> Odoo 19 (Community or Enterprise)</li>
-            <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Dependencies:</b> Purchase and Product modules must be installed</li>
-        </ul>
-    </div>
-</section>
-
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Product Configuration</b></h3>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Before using the feature, configure each product. Navigate to <b style="color:#008ba7;">Sales &rarr; Products &rarr; Products</b> and open the Conversion Details section of a Product:
-        </h3>
-        
-        <table class="table table-bordered" style="margin-top: 20px; font-size: 14px; background: white;">
-            <thead>
-                <tr style="background-color: #f8f9fa;">
-                    <th>Field</th>
-                    <th>Description</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><b>Base UoM</b></td>
-                    <td>Default stock unit (auto)</td>
-                    <td>Units</td>
-                </tr>
-                <tr>
-                    <td><b>Price per Base UoM</b></td>
-                    <td>Cost per base unit</td>
-                    <td>$12.50</td>
-                </tr>
-                <tr>
-                    <td><b>Purchase UoM</b></td>
-                    <td>Vendor&apos;s unit of measure</td>
-                    <td>kg</td>
-                </tr>
-                <tr>
-                    <td><b>Conversion Ratio</b></td>
-                    <td>Purchase UoM quantity per base unit</td>
-                    <td>2.5</td>
-                </tr>
-                <tr>
-                    <td><b>Price per Purchase Unit</b></td>
-                    <td>Vendor&apos;s price listed in their quote</td>
-                    <td>$5.00</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
-            <img class="oe_picture oe_screenshot" src="img_1.png">
-        </div>
-
-        <h4 style="margin-top: 30px; color: #008ba7;"><b>Field Behavior:</b></h4>
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <ul style="list-style: none;">
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Updating Price per Purchase Unit updates Base Price</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Updating Base Price recalculates Purchase Price</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Changing Conversion Ratio recalculates pricing</li>
-                </ul>
+                <table
+                    style="width: 100%; margin: 0 auto; max-width: 900px; border: none; border-collapse: separate; border-spacing: 14px 0;">
+                    <tr>
+                        <td
+                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            <div
+                                style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
+                                Dual-UoM</div>
+                            <div style="font-size: 12px !important; color: #ffffff !important;">Purchase
+                                and stock units, side by side</div>
+                        </td>
+                        <td
+                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            <div
+                                style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
+                                1x</div>
+                            <div style="font-size: 12px !important; color: #ffffff !important;">
+                                Conversion ratio set once per product</div>
+                        </td>
+                        <td
+                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            <div
+                                style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
+                                Live</div>
+                            <div style="font-size: 12px !important; color: #ffffff !important;">Prices
+                                recalculate in real time</div>
+                        </td>
+                        <td
+                            style="width: 25%; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 18px 14px; text-align: center; vertical-align: top;">
+                            <div
+                                style="font-size: 22px !important; font-weight: 800 !important; color: #e7b463 !important; margin-bottom: 6px;">
+                                Zero</div>
+                            <div style="font-size: 12px !important; color: #ffffff !important;">Manual
+                                maths, spreadsheets, or errors</div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
-
-        <h4 style="margin-top: 20px; color: #008ba7;"><b>Validation Rule:</b></h4>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Conversion Ratio must be greater than 0
-        </h3>
     </div>
 </section>
 
-<section class="oe_container oe_dark">
-    <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Creating a Purchase Order</b></h3>
-        
-        <h4 style="margin-top: 20px; color: #008ba7;"><b>1. Add Product</b></h4>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Navigate to <b>Purchase &rarr; Orders &rarr; Purchase Orders</b> and click Create. Select your Vendor and add the properly configured product.
-        </h3>
-        
-        <h4 style="margin-top: 30px; color: #008ba7;"><b>2. New Fields in Order Line</b></h4>
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-6">
-                <ul style="list-style: none;">
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Conversion Qty:</b> Quantity shown exactly in the Purchase UoM</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Purchase UoM:</b> The Vendor&apos;s specific unit (e.g., kg)</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> <b>Price per Conversion:</b> The exact price per Purchase UoM</li>
-                </ul>
+<!-- SECTION 2: THE PROBLEM -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-exclamation-triangle"></i></span>
+                <span>The Problem Odoo Doesn't Solve Out of the Box</span>
+            </h2>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 14px; text-align: left !important;">
+                Procurement teams in manufacturing, distribution, and wholesale run into this constantly. Your supplier
+                quotes in their unit of measure &mdash; kilograms, litres, pallets, reels, metric tonnes. Your warehouse
+                receives
+                and counts in a completely different unit &mdash; boxes, units, grams, pieces, metres.</p>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 14px; text-align: left !important;">
+                Odoo's standard purchase module handles basic UoM conversion within the same category (e.g., kg to g),
+                but
+                it can't handle <strong style="color: #2A2130 !important;">cross-category conversion</strong> &mdash;
+                buying
+                in a
+                completely different unit than you stock (like kg from a vendor, boxes on your shelf). It also doesn't
+                give
+                you a <strong style="color: #2A2130 !important;">purchase-specific unit with its own pricing
+                    logic</strong>,
+                vendor-facing quantity display, and automatic two-way price synchronisation. That's the gap this module
+                fills.</p>
+
+            <div
+                style="background-color: #E1F5F4; border-left: 4px solid #017E84; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 14.5px !important; color: #2E2732 !important;">
+                <strong style="color: #017E84 !important;">The Vendor Unit of Measure Converter for Purchase module
+                    closes
+                    that gap.</strong> As a lightweight third-party UoM conversion app, it adds a dedicated Purchase UoM
+                field per product, a configurable conversion ratio, automatic bidirectional pricing, and supplier-ready
+                reports &mdash; entirely within Odoo's purchasing layer, with nothing touching your stock records.
+            </div>
+
+            <div style="display: flex; gap: 16px; margin: 18px 0; flex-wrap: wrap;">
+                <div
+                    style="flex: 1; min-width: 300px; background-color: #FBEAEE; border: 1px solid #F3CBD4; border-radius: 12px; padding: 18px 20px;">
+                    <div
+                        style="display: flex; align-items: center; font-weight: 700 !important; font-size: 14.5px !important; color: #C63A56 !important; margin-bottom: 8px;">
+                        &#10005; Without this module</div>
+                    <p
+                        style="font-size: 14px !important; color: #2E2732 !important; margin: 0; line-height: 1.6 !important;">
+                        Manually calculate quantities per PO line, maintain a conversion spreadsheet, risk data
+                        entry errors on every order, send confusing purchase orders to vendors who quote in different
+                        units, and lose visibility on true per-unit landed cost.</p>
+                </div>
+                <div
+                    style="flex: 1; min-width: 300px; background-color: #E6F5EE; border: 1px solid #C9EADB; border-radius: 12px; padding: 18px 20px;">
+                    <div
+                        style="display: flex; align-items: center; font-weight: 700 !important; font-size: 14.5px !important; color: #0E8F6B !important; margin-bottom: 8px;">
+                        &#10003; With this module</div>
+                    <p
+                        style="font-size: 14px !important; color: #2E2732 !important; margin: 0; line-height: 1.6 !important;">
+                        Configure a conversion ratio once per product. Enter quantities in the supplier's unit. Odoo
+                        auto-calculates stock quantities, syncs pricing both ways in real time, and prints
+                        vendor-ready reports with their unit and product code on every PO.</p>
+                </div>
+            </div>
+
+            <div
+                style="background-color: #F8F4F7; border-left: 4px solid #714B67; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 14.5px !important; color: #2E2732 !important; font-style: italic !important;">
+                <strong style="font-style: normal !important; color: #714B67 !important;">Quick summary:</strong> If
+                you've
+                ever asked "what's the cost per box when my supplier prices by kg?" or "why doesn't the stock quantity
+                match
+                what I ordered?" or "can Odoo show both the vendor's unit and my stock unit on the same PO line?"
+                &mdash; this
+                module is exactly what you need.
             </div>
         </div>
-
-        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
-            <img class="oe_picture oe_screenshot" src="img_2.png">
-        </div>
-
-        <h4 style="margin-top: 30px; color: #008ba7;"><b>3. Pricing Logic</b></h4>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            The system instantly calculates: <b>Unit Price = Price per Conversion &times; Conversion Ratio</b>. You can manually edit the Price per Conversion and the Unit Price updates automatically.
-        </h3>
-        
     </div>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Purchase Reports</b></h3>
-        
-        <h4 style="margin-top: 20px; color: #008ba7;"><b>Request for Quotation (RFQ)</b></h4>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Includes:
-        </h3>
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <ul style="list-style: none;">
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Serial Number (S.No)</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Quantity in Purchase UoM</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Placeholder Price column</li>
-                </ul>
+<!-- SECTION 3: KEY FEATURES -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-star"></i></span>
+                <span>Key Features</span>
+            </h2>
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -7px; margin-left: -7px;">
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div
+                        style="background-color: #F5F1F3; border-radius: 12px; padding: 18px 20px; height: 100%; display: flex; align-items: flex-start;">
+                        <div style="margin-right: 14px; margin-top: 2px; flex-shrink: 0;">
+                            <span
+                                style="background-color: #017E84; color: #ffffff !important; font-size: 13px !important; width: 26px; height: 26px; border-radius: 50%; display: inline-block; text-align: center !important; line-height: 26px !important;">&#10003;</span>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h4
+                                style="font-weight: 700 !important; font-size: 14.5px !important; margin: 0 0 4px; color: #2A2130 !important;">
+                                Separate Purchase UoM Per Product</h4>
+                            <p
+                                style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
+                                Define a dedicated purchase unit (kg, litre, carton, pallet) that differs entirely from
+                                your
+                                internal stock unit &mdash; buy in kg from a vendor, stock in boxes or units.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div
+                        style="background-color: #F5F1F3; border-radius: 12px; padding: 18px 20px; height: 100%; display: flex; align-items: flex-start;">
+                        <div style="margin-right: 14px; margin-top: 2px; flex-shrink: 0;">
+                            <span
+                                style="background-color: #017E84; color: #ffffff !important; font-size: 13px !important; width: 26px; height: 26px; border-radius: 50%; display: inline-block; text-align: center !important; line-height: 26px !important;">&#10003;</span>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h4
+                                style="font-weight: 700 !important; font-size: 14.5px !important; margin: 0 0 4px; color: #2A2130 !important;">
+                                Automatic Quantity Conversion</h4>
+                            <p
+                                style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
+                                Enter quantities in the supplier's unit and the system instantly calculates the
+                                equivalent
+                                stock quantity using your defined conversion ratio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div
+                        style="background-color: #F5F1F3; border-radius: 12px; padding: 18px 20px; height: 100%; display: flex; align-items: flex-start;">
+                        <div style="margin-right: 14px; margin-top: 2px; flex-shrink: 0;">
+                            <span
+                                style="background-color: #017E84; color: #ffffff !important; font-size: 13px !important; width: 26px; height: 26px; border-radius: 50%; display: inline-block; text-align: center !important; line-height: 26px !important;">&#10003;</span>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h4
+                                style="font-weight: 700 !important; font-size: 14.5px !important; margin: 0 0 4px; color: #2A2130 !important;">
+                                Two-Way Bidirectional Price Sync</h4>
+                            <p
+                                style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
+                                Update either the purchase price or the base unit price, and the other field
+                                recalculates
+                                automatically. No double-entry, no drift.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div
+                        style="background-color: #F5F1F3; border-radius: 12px; padding: 18px 20px; height: 100%; display: flex; align-items: flex-start;">
+                        <div style="margin-right: 14px; margin-top: 2px; flex-shrink: 0;">
+                            <span
+                                style="background-color: #017E84; color: #ffffff !important; font-size: 13px !important; width: 26px; height: 26px; border-radius: 50%; display: inline-block; text-align: center !important; line-height: 26px !important;">&#10003;</span>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h4
+                                style="font-weight: 700 !important; font-size: 14.5px !important; margin: 0 0 4px; color: #2A2130 !important;">
+                                Vendor Product Codes on Reports</h4>
+                            <p
+                                style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
+                                RFQs and PO PDFs include supplier-specific product codes, quantities in purchase UoM,
+                                and
+                                per-unit pricing formatted the way your vendors expect.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div
+                        style="background-color: #F5F1F3; border-radius: 12px; padding: 18px 20px; height: 100%; display: flex; align-items: flex-start;">
+                        <div style="margin-right: 14px; margin-top: 2px; flex-shrink: 0;">
+                            <span
+                                style="background-color: #017E84; color: #ffffff !important; font-size: 13px !important; width: 26px; height: 26px; border-radius: 50%; display: inline-block; text-align: center !important; line-height: 26px !important;">&#10003;</span>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h4
+                                style="font-weight: 700 !important; font-size: 14.5px !important; margin: 0 0 4px; color: #2A2130 !important;">
+                                Inventory Records Stay Clean</h4>
+                            <p
+                                style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
+                                All stock valuations, warehouse counts, and inventory movements continue using the base
+                                UoM.
+                                Conversion logic is confined entirely to purchasing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div
+                        style="background-color: #F5F1F3; border-radius: 12px; padding: 18px 20px; height: 100%; display: flex; align-items: flex-start;">
+                        <div style="margin-right: 14px; margin-top: 2px; flex-shrink: 0;">
+                            <span
+                                style="background-color: #017E84; color: #ffffff !important; font-size: 13px !important; width: 26px; height: 26px; border-radius: 50%; display: inline-block; text-align: center !important; line-height: 26px !important;">&#10003;</span>
+                        </div>
+                        <div style="flex-grow: 1;">
+                            <h4
+                                style="font-weight: 700 !important; font-size: 14.5px !important; margin: 0 0 4px; color: #2A2130 !important;">
+                                Simple One-Time Product Setup</h4>
+                            <p
+                                style="font-size: 13.3px !important; color: #111827 !important; margin: 0; line-height: 1.55 !important;">
+                                A dedicated <span
+                                    style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 4px; border-radius: 4px;">Conversion
+                                    Details</span> section is added to each product form. Set Purchase UoM, enter ratio,
+                                done.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
-            <img class="oe_picture oe_screenshot" src="img_3.png">
-        </div>
+    </div>
+</section>
 
-        <h4 style="margin-top: 30px; color: #008ba7;"><b>Purchase Order Report</b></h4>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 16px;margin: 0;margin-top: 10px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            Includes:
-        </h3>
-        <div class="row" style="margin-top: 15px;">
-            <div class="col-md-12">
-                <ul style="list-style: none;">
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Serial Number (S.No)</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Vendor Product Code</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Quantity (Purchase UoM)</li>
-                    <li><i class="fa fa-check" style="color: #008ba7;"></i> Price format: Price per Purchase Unit / UoM (e.g., 5.00 / kg)</li>
-                </ul>
+<!-- SECTION 4: HOW CONVERTED PO LOOKS -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-bar-chart"></i></span>
+                <span>How a Converted Purchase Order Line Looks</span>
+            </h2>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 16px; text-align: left !important;">
+                Below is a worked example showing how the module transforms a standard purchase order line. The product
+                is
+                <strong>Wheat Flour</strong> &mdash; supplier quotes in <strong>kg</strong>, warehouse stocks in
+                <strong>units
+                    (bags)</strong> where 1 bag = 2.5 kg.
+            </p>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 13.8px !important;">
+                <thead>
+                    <tr>
+                        <th
+                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; border-radius: 8px 0 0 0;">
+                            Field</th>
+                        <th
+                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;">
+                            What it is</th>
+                        <th
+                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase;">
+                            Value</th>
+                        <th
+                            style="background: #714B67; color: #fff; text-align: left; padding: 12px 16px; font-size: 12px; letter-spacing: 0.6px; text-transform: uppercase; border-radius: 0 8px 0 0;">
+                            Source</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2A2130; font-weight: 700;">
+                            Base UoM</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2E2732;">Your internal
+                            stock unit</td>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
+                            Units (bags)</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Set
+                                on product</span></td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2A2130; font-weight: 700;">
+                            Purchase UoM</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2E2732;">Supplier's
+                            unit of
+                            measure</td>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
+                            Kilograms (kg)</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Set
+                                on product</span></td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2A2130; font-weight: 700;">
+                            Conversion Ratio</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2E2732;">Purchase UoM
+                            qty
+                            per 1 base unit</td>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
+                            2.5 (1 bag = 2.5 kg)</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Set
+                                on product</span></td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2A2130; font-weight: 700;">
+                            Purchase Qty Entered</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2E2732;">What you type
+                            on
+                            the PO line</td>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #714B67; font-weight: 700;">
+                            100 kg</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #F1E9EF; color: #714B67;">Entered
+                                on PO</span></td>
+                    </tr>
+                    <tr>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2A2130; font-weight: 700;">
+                            Price / Base Unit</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #2E2732;">Your internal
+                            cost
+                            per bag</td>
+                        <td
+                            style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6; color: #0E8F6B; font-weight: 700;">
+                            $12.50 / bag</td>
+                        <td style="padding: 13px 16px; border-bottom: 1px solid #E7E0E6;"><span
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6F5EE; color: #0E8F6B;">Auto-calculated</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 13px 16px; border-bottom: none; color: #2A2130; font-weight: 700;">Line
+                            Total
+                        </td>
+                        <td style="padding: 13px 16px; border-bottom: none; color: #2E2732;">Order line amount</td>
+                        <td style="padding: 13px 16px; border-bottom: none; color: #0E8F6B; font-weight: 700;">$500.00
+                        </td>
+                        <td style="padding: 13px 16px; border-bottom: none;"><span
+                                style="display: inline-block; font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 999px; background: #E6F5EE; color: #0E8F6B;">Auto-calculated</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div style="margin: 20px 0; text-align: center;">
+                <img src="https://apps.odoocdn.com/apps/assets/19.0/purchase_dynamic_uom_conversion/img_2.png"
+                    alt="Purchase order line showing Conversion Qty, Purchase UoM, and Price per Conversion fields"
+                    style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 18px rgba(0,0,0,0.08);">
+                <div style="margin-top: 8px; font-size: 12.5px; color: #111827;">The new Conversion Qty, Purchase UoM,
+                    and Price per Conversion fields on a purchase order line</div>
+            </div>
+
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 16px; text-align: left !important;">
+                This setup is familiar to anyone who has worked across supply chains with mixed units &mdash; and that
+                intentional
+                clarity is the whole point. Cost reconciliation, landed cost analysis, and vendor negotiations all
+                become
+                dramatically faster when both units are visible at once.
+            </p>
+
+            <p style="font-weight: 700; color: #2A2130; margin-top: 20px; font-size: 14.5px;">Pricing Formula &mdash;
+                Transparent
+                &amp; Auditable</p>
+            <div
+                style="background: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center; margin: 14px 0; font-weight: 700; font-size: 15px; color: #714B67; font-family: 'Courier New', monospace;">
+                Unit Price (Base) = Price per Purchase Unit &times; Conversion Ratio
+            </div>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 0; text-align: left !important;">
+                The formula is applied on <em>every purchase order line</em> in real time. Change the purchase price
+                &rarr;
+                base
+                price recalculates. Change the base price &rarr; purchase price recalculates. Change the ratio &rarr;
+                <strong>both
+                    prices</strong> recalculate simultaneously. The logic is entirely transparent and can be validated
+                by
+                any Odoo developer from the 231-line codebase.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4.5: NEED ANY HELP? -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #F8F4F7; border-radius: 14px; padding: 26px; border: 1px solid #e9e7e4; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div
+            style="max-width: 900px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin: 0; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #241A28 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-headphones"></i></span>
+                <span>Need Any Help?</span>
+            </h2>
+            <div style="flex: 0 0 50%; max-width: 50%;">
+                <div style="background: #241A28; border-radius: 12px; padding: 16px 18px; color: #fff;">
+                    <div
+                        style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 14px; margin-bottom: 12px;">
+                        Support | Contact
+                    </div>
+                    <div
+                        style="font-size: 13px !important; color: #2E2732 !important; font-weight: 600 !important; background-color: #fff; border-radius: 6px; padding: 8px 12px;">
+                        LINK :
+                        <a href="mailto:support.odoo@ahex.co"
+                            style="color: #017E84 !important; word-break: break-all; text-decoration: underline !important;">support.odoo@ahex.co</a>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
 </section>
 
-<section class="oe_container oe_dark">
+<!-- SECTION 5: PRODUCT CONFIGURATION -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-wrench"></i></span>
+                <span>Product Configuration &mdash; Step by Step</span>
+            </h2>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 22px; text-align: left !important;">
+                One-time setup per product. Once configured, every subsequent purchase order for that product converts
+                automatically. No further action needed for your procurement team.
+            </p>
 
-    <div class="oe_row oe_spaced">
-        <div class="oe_demo oe_picture oe_screenshot" style="margin-top: 20px;">
-            <img class="oe_picture oe_screenshot" src="img_4.png">
-        </div>
+            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+                <div
+                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    1</div>
+                <div>
+                    <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Open the product
+                        form
+                    </h4>
+                    <p style="font-size: 13.8px; color: #111827; margin: 0;">Navigate to <span
+                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Purchase
+                            &rarr; Products &rarr; Products</span> and open the product you want to configure for
+                        dual-unit
+                        purchasing. Any product that is purchased from a supplier with different units is a candidate.
+                    </p>
+                </div>
+            </div>
 
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Frequently Asked Questions</b></h3>
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-md-12">
-                <p><b>Q: Conversion fields are not showing on my product?</b><br>
-                    A: Ensure Conversion Ratio is greater than 0, a Purchase UoM is set, and the Price per Purchase Unit is filled.</p>
-                <p><b>Q: My changes are not reflecting in an existing PO?</b><br>
-                    A: Existing line items store values as they were at creation time. Re-select the product or update the quantity to trigger the recalculation.</p>
-                <p><b>Q: Why is the Vendor Code missing in my report?</b><br>
-                    A: You must add the specific supplier in the Product&apos;s &apos;Supplier Info&apos; tab and fill in their Vendor Product Code.</p>
-                <p><b>Q: Validation error says ratio must be &gt; 0?</b><br>
-                    A: You must use strictly positive values. Use decimals like &apos;0.001&apos; if you are converting to larger units (like 1 Gram = 0.001 KG).</p>
-                <p><b>Q: Will this mess up my warehouse inventory quantities?</b><br>
-                    A: No. Inventory continues to use the Base UoM for all stock valuations and counts. This conversion logic only applies to the Purchasing environment.</p>
+            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+                <div
+                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    2</div>
+                <div>
+                    <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Locate the
+                        Conversion
+                        Details section</h4>
+                    <p style="font-size: 13.8px; color: #111827; margin: 0;">This module adds a dedicated <span
+                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Conversion
+                            Details</span> section to the product form. All conversion-specific fields live here &mdash;
+                        separate
+                        from the standard product tabs so they don't interfere with existing workflows.</p>
+                </div>
+            </div>
 
+            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+                <div
+                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    3</div>
+                <div>
+                    <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Set your Purchase
+                        UoM
+                    </h4>
+                    <p style="font-size: 13.8px; color: #111827; margin: 0;">Select the supplier's unit of measure
+                        (e.g.,
+                        kg, litre, carton, pallet). This must be a valid Odoo unit &mdash; if it doesn't exist yet,
+                        create it
+                        under <span
+                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Configuration
+                            &rarr; Units of Measure</span> first.</p>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+                <div
+                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    4</div>
+                <div>
+                    <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Enter the
+                        Conversion
+                        Ratio</h4>
+                    <p style="font-size: 13.8px; color: #111827; margin: 0 0 10px 0;">Enter how many Purchase UoM units
+                        equal one Base UoM unit. The value must be greater than zero. Use decimals (e.g., 0.001) when
+                        you
+                        purchase in a unit larger than your stock unit.</p>
+                    <div
+                        style="background: #FBF0D9; border-radius: 8px; padding: 14px 18px; font-size: 13.5px; color: #8A6116;">
+                        <i class="fa fa-lightbulb-o"></i> Example: if 1 bag (base) = 2.5 kg (purchase), enter 2.5. If 1
+                        gram (base) = 0.001 kg (purchase),
+                        enter 0.001.
+                    </div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+                <div
+                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    5</div>
+                <div>
+                    <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Set either price
+                        field
+                        &mdash; the other calculates automatically</h4>
+                    <p style="font-size: 13.8px; color: #111827; margin: 0;">Enter either the <strong>Price per Purchase
+                            Unit</strong> (the supplier's quoted price) or the <strong>Price per Base Unit</strong>
+                        (your
+                        internal cost). The other field calculates automatically using the conversion ratio. Both stay
+                        in
+                        sync from this point forward.</p>
+                </div>
+            </div>
+            <div style="display: flex; gap: 16px; margin-bottom: 22px;">
+                <div
+                    style="width: 32px; height: 32px; border-radius: 50%; background: #714B67; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">
+                    6</div>
+                <div>
+                    <h4 style="font-size: 15px; color: #2A2130; margin: 0 0 5px 0; font-weight: 700;">Add the supplier
+                        and
+                        vendor product code</h4>
+                    <p style="font-size: 13.8px; color: #111827; margin: 0;">In the <span
+                            style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Supplier
+                            Info</span> tab, add the supplier and fill in their Vendor Product Code. This code appears
+                        on
+                        RFQ and PO PDF reports in the supplier-facing columns &mdash; formatted exactly as vendors
+                        expect.</p>
+                </div>
+            </div>
+
+            <div style="margin: 20px 0; text-align: center;">
+                <img src="https://apps.odoocdn.com/apps/assets/19.0/purchase_dynamic_uom_conversion/img_1.png"
+                    alt="Conversion Details section on the product form showing Base UoM, Purchase UoM, Conversion Ratio, and price fields"
+                    style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 18px rgba(0,0,0,0.08);">
+                <div style="margin-top: 8px; font-size: 12.5px; color: #111827;">The Conversion Details section on the
+                    product form</div>
             </div>
         </div>
-        <hr>
-        <h3 class="oe_slogan" style="color:#000000;text-align: left;"><b>Support</b></h3>
-        <ul style="font-size: 15px; margin-top: 15px; list-style: none;">
-            <li><i class="fa fa-check" style="color: #008ba7;"></i> Ensure the Purchase module is installed and active in your Odoo instance.</li>
-            <li><i class="fa fa-check" style="color: #008ba7;"></i> Calculations execute in real-time natively using Odoo floating-point structures.</li>
-        </ul>
-        <br>
-        <h3 class="oe_slogan text-justify"
-            style="text-align: justify;font-size: 14px;margin: 0;margin-top: 0px;color: #070707 !important;opacity: 1 !important;line-height: 24px;">
-            For purchase support, installation assistance, or customisation enquiries, please contact us through the channel where you purchased this module.
-        </h3>
-
     </div>
 </section>
 
-<section class="oe_container">
-    <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan" style="color:#2e2c2c;text-align: left;"><b>Connect With Us</b></h3>
-        <div class="text-center">
-            <a href="https://www.facebook.com/AhexTechnologies/" target="_blank"><i class="fa fa-3x fa-facebook-square"
-                    style="color:#4168a5;background:white;margin-left: 10px;margin-right: 6px;"></i></a>
-            <a href="https://www.instagram.com/ahextechnologies/" target="_blank"><i class="fa fa-3x fa-instagram"
-                    style="color:#b136a0;background:white;margin-left: 10px;margin-right: 6px;"></i></a>
-            <a href="https://www.linkedin.com/company/ahex-technologies/" target="_blank"><i
-                    class="fa fa-3x fa-linkedin"
-                    style="color:#0065a9;background:white;margin-left: 10px;margin-right: 6px;"></i></a>
+<!-- SECTION 6: PURCHASE REPORTS -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-file-text-o"></i></span>
+                <span>What Your Purchase Reports Include</span>
+            </h2>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 16px; text-align: left !important;">
+                This module extends Odoo's standard RFQ and Purchase Order PDF reports with supplier-facing columns.
+                Both
+                formats use the vendor's own vocabulary &mdash; their unit, their product code, their pricing format
+                &mdash; making
+                POs
+                email-ready without reformatting.
+            </p>
+
+            <div class="row"
+                style="display: flex; flex-wrap: wrap; margin-right: -12px; margin-left: -12px; margin-top: 10px;">
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 12px; box-sizing: border-box;">
+                    <h4
+                        style="font-size: 14.5px; font-weight: 700; color: #2A2130; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid #F1E9EF; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa fa-file-o"></i> Request for Quotation (RFQ)
+                    </h4>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #714B67;"></span>S.No
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Serial number per line item
+                        </p>
+                    </div>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #0E8F6B;"></span>Product
+                            Description
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Product name in standard
+                            format
+                        </p>
+                    </div>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #017E84;"></span>Quantity
+                            in Purchase UoM
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Shown in the supplier's unit
+                            (kg,
+                            litre etc.)</p>
+                    </div>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #8C6183;"></span>Price
+                            Placeholder Column
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Empty column for vendor to
+                            fill
+                            &amp; return</p>
+                    </div>
+                    <div style="margin: 20px 0; text-align: center;">
+                        <img src="https://apps.odoocdn.com/apps/assets/19.0/purchase_dynamic_uom_conversion/img_3.png"
+                            alt="Request for Quotation PDF report"
+                            style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 18px rgba(0,0,0,0.08);">
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 12px; box-sizing: border-box;">
+                    <h4
+                        style="font-size: 14.5px; font-weight: 700; color: #2A2130; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid #AFE9E5; display: flex; align-items: center; gap: 8px;">
+                        <i class="fa fa-archive"></i> Purchase Order Report
+                    </h4>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #714B67;"></span>S.No
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Serial number per line item
+                        </p>
+                    </div>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #C9962F;"></span>Vendor
+                            Product Code
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Supplier's own SKU / catalogue
+                            reference</p>
+                    </div>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #017E84;"></span>Quantity
+                            in Purchase UoM
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">Order qty in supplier's unit
+                        </p>
+                    </div>
+                    <div style="background: #F5F1F3; border-radius: 8px; padding: 13px 16px; margin-bottom: 10px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.6px; color: #2A2130; margin-bottom: 2px;">
+                            <span
+                                style="width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: #0E8F6B;"></span>Price
+                            per Purchase Unit / UoM
+                        </div>
+                        <p style="font-size: 12.8px; color: #111827; margin: 0 0 0 16px;">E.g., $5.00 / kg &mdash;
+                            supplier-formatted</p>
+                    </div>
+                    <div style="margin: 20px 0; text-align: center;">
+                        <img src="https://apps.odoocdn.com/apps/assets/19.0/purchase_dynamic_uom_conversion/img_4.png"
+                            alt="Purchase Order PDF report"
+                            style="max-width: 100%; height: auto; border-radius: 12px; border: 1px solid rgba(0,0,0,0.08); box-shadow: 0 4px 18px rgba(0,0,0,0.08);">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="oe_container oe_separator">
+<!-- SECTION 7: IDEAL FOR -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-bullseye"></i></span>
+                <span>Ideal For</span>
+            </h2>
+            <div
+                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
+                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-industry"></i></span>
+                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Manufacturing
+                        businesses</strong> purchasing raw materials by weight or volume but managing finished goods or
+                    sub-assemblies by unit count &mdash; with Bill of Materials that need both.</p>
+            </div>
+            <div
+                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
+                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-truck"></i></span>
+                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Distributors
+                        and
+                        wholesalers</strong> whose supplier catalogues use different units than their warehouse
+                    management
+                    or fulfillment system.</p>
+            </div>
+            <div
+                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
+                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-archive"></i></span>
+                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Food and
+                        beverage
+                        companies</strong> handling bulk commodity purchases (kg, litres, tonnes) with unit-based
+                    internal
+                    stocking and recipe management.</p>
+            </div>
+            <div
+                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
+                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-plane"></i></span>
+                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Import / export
+                        businesses</strong> reconciling supplier invoices denominated in international units against
+                    local
+                    warehouse stock unit records.</p>
+            </div>
+            <div
+                style="display: flex; align-items: flex-start; gap: 14px; background: #F5F1F3; border-left: 3px solid #017E84; border-radius: 8px; padding: 15px 18px; margin-bottom: 10px;">
+                <span style="font-size: 18px; color: #017E84;"><i class="fa fa-handshake-o"></i></span>
+                <p style="margin: 0; font-size: 13.8px; color: #2E2732;"><strong style="color: #2A2130;">Odoo
+                        implementation
+                        partners</strong> setting up purchase order unit conversion and a per-product conversion ratio
+                    for
+                    clients with multi-UoM supply chains &mdash; one module solves the whole class of problem.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 8: TECH SPECS -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-cogs"></i></span>
+                <span>Technical Specifications</span>
+            </h2>
+            <div class="row" style="display: flex; margin-bottom: 14px; margin-left: -7px; margin-right: -7px;">
+                <div class="col-md-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 7px;">
+                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                        <div
+                            style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
+                            Odoo Version</div>
+                        <div style="font-size: 15px; font-weight: 800; color: #241A28;">19.0</div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 7px;">
+                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                        <div
+                            style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
+                            Lines of Code</div>
+                        <div style="font-size: 15px; font-weight: 800; color: #241A28;">343</div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="flex: 0 0 33.333%; max-width: 33.333%; padding: 7px;">
+                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                        <div
+                            style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
+                            License</div>
+                        <div style="font-size: 15px; font-weight: 800; color: #241A28;">OPL-1</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="display: flex; margin-bottom: 14px; margin-left: -7px; margin-right: -7px;">
+                <div class="col-md-12" style="flex: 0 0 100%; max-width: 100%; padding: 7px;">
+                    <div style="background: #F5F1F3; border-radius: 12px; padding: 16px; text-align: center;">
+                        <div
+                            style="font-size: 10.5px; letter-spacing: 0.8px; text-transform: uppercase; color: #111827; margin-bottom: 6px;">
+                            Technical Name</div>
+                        <div
+                            style="font-size: 13px; font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 4px 8px; border-radius: 6px; display: inline-block; font-weight: 800;">
+                            purchase_dynamic_uom_conversion</div>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0;">
+                <span
+                    style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background: #E6F5EE; color: #0E8F6B;">&#10003;
+                    Odoo.sh</span>
+                <span
+                    style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background: #E6F5EE; color: #0E8F6B;">&#10003;
+                    On-Premise</span>
+                <span
+                    style="display: flex; align-items: center; gap: 6px; padding: 8px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; background: #E6F5EE; color: #0E8F6B;">&#10003;
+                    Enterprise Edition</span>
+            </div>
+            <div
+                style="border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; font-size: 13.8px; background: #E1F5F4; border: 1px solid #AFE9E5;">
+                <div style="font-weight: 700; margin-bottom: 4px; color: #017E84;">Module Dependencies</div>
+                <p style="color: #2E2732; margin: 0;">&bull; Purchase (purchase) &nbsp; &bull; Product (product)</p>
+            </div>
+            <div
+                style="border-radius: 12px; padding: 16px 20px; font-size: 13.8px; background: #F8F4F7; border: 1px solid #F1E9EF;">
+                <div style="font-weight: 700; margin-bottom: 4px; color: #714B67;">External Dependencies</div>
+                <p style="color: #2E2732; margin: 0;">None &mdash; pure Odoo, no third-party libraries</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 9: QUICK SETUP GUIDE -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #E1F5F4; color: #017E84 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-rocket"></i></span>
+                <span>Quick Setup Guide</span>
+            </h2>
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -17px; margin-left: -17px;">
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 17px; box-sizing: border-box;">
+                    <p style="font-weight: 700; color: #2A2130; margin-bottom: 8px;">Step 1 &mdash; Install the Module
+                    </p>
+                    <ol style="padding-left: 18px; color: #111827; font-size: 13.8px; margin-top: 8px;">
+                        <li style="margin-bottom: 8px;">Copy module folder to your custom addons directory</li>
+                        <li style="margin-bottom: 8px;">Go to <strong>Settings</strong> &rarr; activate
+                            <strong>Developer
+                                Mode</strong>
+                        </li>
+                        <li style="margin-bottom: 8px;">Go to <strong>Apps</strong> &rarr; <strong>Update Apps
+                                List</strong>
+                        </li>
+                        <li>Search <em>"Vendor Unit of Measure Converter for Purchase"</em> &rarr; click
+                            <strong>Install</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 17px; box-sizing: border-box;">
+                    <p style="font-weight: 700; color: #2A2130; margin-bottom: 8px;">Step 2 &mdash; Configure Products
+                        &amp;
+                        Start
+                        Purchasing</p>
+                    <ol style="padding-left: 18px; color: #111827; font-size: 13.8px; margin-top: 8px;">
+                        <li style="margin-bottom: 8px;">Open a product &rarr; find <span
+                                style="font-family: 'Courier New', monospace; background: #F1E9EF; color: #714B67; padding: 2px 7px; border-radius: 5px;">Conversion
+                                Details</span></li>
+                        <li style="margin-bottom: 8px;">Set <strong>Purchase UoM</strong> and <strong>Conversion
+                                Ratio</strong></li>
+                        <li>Create a purchase order &mdash; conversion applies automatically</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 10: FAQ -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-question-circle"></i></span>
+                <span>Frequently Asked Questions</span>
+            </h2>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    Why should I buy this app? Odoo already has UoM conversion built in?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Odoo's built-in conversion only works within fixed categories, like kg to g. It can't handle a
+                    vendor
+                    selling in cases or tonnes while you stock in units or kg. Our module adds a configurable
+                    purchase-unit
+                    ratio with automatic price sync, so you never do the math by hand.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    How is this different from a "secondary unit of measure" app for purchase?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Most secondary UoM apps just display a second quantity or price alongside the original &mdash; you
+                    still
+                    enter
+                    and reconcile both manually. This module goes further: set the conversion ratio once per product,
+                    and
+                    the purchase unit and base unit prices stay in sync automatically, in both directions, on every
+                    order
+                    line.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    I've purchased the app, can you help me set it up?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Sure, drop us an email at <a href="mailto:support.odoo@ahex.co.in"
+                        style="color: #017E84; font-weight: 600; text-decoration: none;">support.odoo@ahex.co.in</a> and
+                    we'll help you with installation and setup.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    Can your app ensure data security, privacy and compliance?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Indeed, our app ensures data security and regulatory compliance. We do not collect any data from
+                    your
+                    system.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    Need some customization in this app, is it possible?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    If you need additional features or widgets that aren't already part of the dashboard, you're welcome
+                    to
+                    customize the module yourself. We can also help, just drop us an email at <a
+                        href="mailto:support.odoo@ahex.co.in"
+                        style="color: #017E84; font-weight: 600; text-decoration: none;">support.odoo@ahex.co.in</a>
+                    with
+                    your requirements.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    What is the support policy for this module?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    If any bug or issue arises in the listed features of this dashboard, we're committed to resolving
+                    it.
+                    Send us the issue details and screenshots at <a href="mailto:support.odoo@ahex.co"
+                        style="color: #017E84; font-weight: 600; text-decoration: none;">support.odoo@ahex.co</a>, and
+                    we'll
+                    get it fixed.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    I have more questions about this app, how do I contact you?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Just drop us an email at <a href="mailto:support.odoo@ahex.co"
+                        style="color: #017E84; font-weight: 600; text-decoration: none;">support.odoo@ahex.co</a> with
+                    your
+                    questions, and we'll get back to you as soon as possible.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    Will this affect my warehouse stock quantities and valuations?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    No. The conversion logic applies only inside the purchasing environment. Your warehouse inventory
+                    continues to use the Base UoM for all stock counts, valuations, and reorder calculations. Nothing
+                    changes for your warehouse or inventory team &mdash; the module is purely additive to the purchase
+                    flow.
+                </p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 15px;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    I updated the product configuration but my existing PO isn't updating. Why?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Existing purchase order lines store the conversion values at the time of creation &mdash; this is
+                    standard
+                    Odoo behaviour to protect confirmed orders from unexpected changes. To apply updated ratios,
+                    re-select
+                    the product on the order line or update the quantity field to trigger a recalculation with the new
+                    settings.</p>
+            </div>
+            <div style="background-color: #F5F1F3; border-radius: 8px; padding: 20px; margin-bottom: 0;">
+                <h4
+                    style="font-weight: 700 !important; font-size: 14.3px !important; margin: 0 0 10px; color: #2A2130 !important;">
+                    The vendor product code isn't showing on my report. How do I fix it?</h4>
+                <p
+                    style="font-size: 13.6px !important; color: #111827 !important; margin: 0; line-height: 1.65 !important;">
+                    Navigate to the product's Supplier Info tab, add the specific supplier, and fill in their Vendor
+                    Product
+                    Code field. The report pulls this value per supplier &mdash; so it must be configured for each
+                    vendor
+                    separately. One product can have different vendor codes for different suppliers and the correct one
+                    will
+                    appear on each PO.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 11: SUPPORT & DOCUMENTATION -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-life-ring"></i></span>
+                <span>Support &amp; Documentation</span>
+            </h2>
+            <p
+                style="font-size: 14.5px !important; color: #111827 !important; line-height: 1.6 !important; margin-bottom: 14px; text-align: left !important;">
+                Committed to ensuring you get the most out of <strong>Vendor Unit of Measure Converter for
+                    Purchase</strong>. For purchase support, installation assistance, or customisation enquiries,
+                contact us
+                through the channel where you purchased this module.
+            </p>
+            <div class="row" style="display: flex; margin-bottom: 14px; margin-left: -7px; margin-right: -7px;">
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div style="background: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center;">
+                        <div style="font-size: 22px; margin-bottom: 8px;"><i class="fa fa-archive"></i></div>
+                        <h4 style="font-size: 14px; color: #2A2130; margin: 0 0 4px 0; font-weight: 700;">Purchase
+                            Support
+                        </h4>
+                        <a href="mailto:support.odoo@ahex.co"
+                            style="display: inline-block; padding: 8px 16px; background-color: #017e84; color: #fff !important; text-decoration: none !important; border-radius: 5px; font-size: 14px !important; font-weight: 600 !important">Open
+                            Support Ticket <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6" style="flex: 0 0 50%; max-width: 50%; padding: 7px; box-sizing: border-box;">
+                    <div style="background: #F5F1F3; border-radius: 12px; padding: 20px; text-align: center;">
+                        <div style="font-size: 22px; margin-bottom: 8px;"><i class="fa fa-envelope"></i></div>
+                        <h4 style="font-size: 14px; color: #2A2130; margin: 0 0 4px 0; font-weight: 700;">Contact Ahex
+                        </h4>
+                        <a href="https://www.ahex.co/contact" target="_blank" rel="noopener"
+                            style="display: inline-block; padding: 8px 16px; background-color: #714b67; color: #fff !important; text-decoration: none !important; border-radius: 5px; font-size: 14px !important; font-weight: 600 !important">https://ahex.co/contact/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 12: OTHER MODULES BY AHEX TECHNOLOGIES -->
+<section class="oe_container" style="margin-bottom: 30px; font-family: sans-serif;">
+    <div
+        style="background-color: #ffffff; border: 1px solid #e9e7e4; border-radius: 14px; padding: 34px 28px; box-shadow: 0 2px 10px rgba(0,0,0,0.04)">
+        <div class="oe_row oe_spaced" style="max-width: 900px; margin: 0 auto">
+            <h2 class="oe_slogan"
+                style="color: #241A28 !important; font-weight: 800 !important; font-size: 21px !important; margin-bottom: 18px; text-align: left !important; display: flex; align-items: center;">
+                <span
+                    style="background-color: #F1E9EF; color: #714B67 !important; padding: 11px 11px; border-radius: 11px; margin-right: 12px; display: inline-flex; align-items: center; justify-content: center; line-height: 1 !important; flex-shrink: 0; width: 42px; height: 42px; font-size: 19px !important;"><i
+                        class="fa fa-link"></i></span>
+                <span>Other Modules by Ahex Technologies</span>
+            </h2>
+            <div class="row" style="display: flex; flex-wrap: wrap; margin-right: -10px; margin-left: -10px">
+                <div class="col-md-4"
+                    style="flex: 0 0 33.333333%; max-width: 33.333333%; padding: 10px; box-sizing: border-box">
+                    <a href="https://apps.odoo.com/apps/modules/19.0/crm_stages_multicompany"
+                        style="display: block; text-decoration: none !important; background-color: #f2f1ef; border: 1px solid #e9e7e4; border-radius: 8px; overflow: hidden; height: 100%; text-align: center !important"
+                        target="_blank">
+                        <div style="width: 100%; overflow: hidden; border-radius: 8px 8px 0 0">
+                            <img src="crm_stages_multicompany.gif" alt="Multi-Company CRM Stage Manager"
+                                style="width: 100%; height: 140px; object-fit: cover; display: block" />
+                        </div>
+                        <div style="padding: 14px 16px">
+                            <h4 style="font-weight: 600 !important; font-size: 15px !important; margin: 0; color: #1f2937 !important">
+                                Multi-Company CRM Stage Manager</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4"
+                    style="flex: 0 0 33.333333%; max-width: 33.333333%; padding: 10px; box-sizing: border-box">
+                    <a href="https://apps.odoo.com/apps/modules/19.0/mrp_custom_bom_generator"
+                        style="display: block; text-decoration: none !important; background-color: #f2f1ef; border: 1px solid #e9e7e4; border-radius: 8px; overflow: hidden; height: 100%; text-align: center !important"
+                        target="_blank">
+                        <div style="width: 100%; overflow: hidden; border-radius: 8px 8px 0 0">
+                            <img src="mrp_custom_bom_generator_banner.gif" alt="Dynamic BOM from Sales Order"
+                                style="width: 100%; height: 140px; object-fit: cover; display: block" />
+                        </div>
+                        <div style="padding: 14px 16px">
+                            <h4 style="font-weight: 600 !important; font-size: 15px !important; margin: 0; color: #1f2937 !important">
+                                Dynamic BOM from Sales Order</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4"
+                    style="flex: 0 0 33.333333%; max-width: 33.333333%; padding: 10px; box-sizing: border-box">
+                    <a href="https://apps.odoo.com/apps/modules/17.0/max-order-quantity-odoo"
+                        style="display: block; text-decoration: none !important; background-color: #f2f1ef; border: 1px solid #e9e7e4; border-radius: 8px; overflow: hidden; height: 100%; text-align: center !important"
+                        target="_blank">
+                        <div style="width: 100%; overflow: hidden; border-radius: 8px 8px 0 0">
+                            <img src="max-order-quantity-odoo_icon.png" alt="Maximum Order Quantity"
+                                style="width: 100%; height: 140px; object-fit: cover; display: block" />
+                        </div>
+                        <div style="padding: 14px 16px">
+                            <h4 style="font-weight: 600 !important; font-size: 15px !important; margin: 0; color: #1f2937 !important">
+                                Maximum Order Quantity</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 13: FOOTER -->
+<section class="oe_container" style="margin-bottom: 40px; font-family: sans-serif;">
+    <div class="oe_row oe_spaced"
+        style="max-width: 900px; margin: 0 auto; text-align: center !important; border-top: 1px solid #e9e7e4; padding-top: 40px">
+        <img src="ahex_logo.webp" alt="Ahex Technologies Logo"
+            style="max-width: 180px; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto" />
+        <h2
+            style="color: #1f2937 !important; font-weight: 700 !important; font-size: 20px !important; margin-bottom: 15px !important;">
+            Ahex Technologies</h2>
+        <p
+            style="font-size: 14px !important; color: #111827 !important; line-height: 1.6 !important; max-width: 850px; margin: 0 auto 30px auto !important;">
+            Building smarter Odoo experiences for growing businesses. We deliver production-ready modules, custom
+            integrations, and ERP workflows, engineered for scale.</p>
+        <div style="text-align: center !important; margin-bottom: 30px !important; position: relative; z-index: 10">
+            <a href="mailto:support.odoo@ahex.co.in"
+                style="display: inline-block !important; margin-right: 15px !important; padding: 10px 25px !important; border: 2px solid #00a09d !important; border-radius: 25px !important; color: #00a09d !important; font-weight: 600 !important; font-size: 13px !important; text-decoration: none !important; cursor: pointer !important; background-color: transparent !important;">Email
+                Us</a>
+            <a href="https://ahex.co" target="_blank" rel="noopener noreferrer"
+                style="display: inline-block !important; padding: 10px 25px !important; border: 2px solid #1f2937 !important; border-radius: 25px !important; color: #1f2937 !important; font-weight: 600 !important; font-size: 13px !important; text-decoration: none !important; cursor: pointer !important; background-color: transparent !important;">Visit
+                www.ahex.co</a>
+        </div>
+        <p style="font-size: 12px !important; color: #9ca3af !important; margin: 0 !important;">&copy; Ahex Technologies
+            &mdash; Odoo Apps &amp; Solutions</p>
+    </div>
 </section>

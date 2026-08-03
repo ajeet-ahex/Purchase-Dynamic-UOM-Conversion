@@ -1,7 +1,7 @@
 # __manifest__.py
 
 {
-    'name': 'Purchase Dynamic UoM Conversion',
+    'name': 'Vendor Unit of Measure Converter for Purchase',
     'version': '19.0.0.1',
     'category': 'Purchases',
     'summary': 'Dynamic conversion ratio for purchase pricing and dynamic Unit of Measure handling.',
